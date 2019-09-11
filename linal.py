@@ -6,7 +6,7 @@ import numpy as np
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("?","!")
-TOKEN = "NjIxMTIwNzc5Nzg2MTI1MzIz.XXgubQ.lsFO1DLdgeEh5SHrzUqkQrej6GQ"
+TOKEN = "XXXXXXXXXXXX"
 
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -23,7 +23,7 @@ async def theorem_list(context):
         'e',
         'g'
     ]
-    await client.say(context.message.author.mention + ", did you that..   " + random.choice(possible_responses))
+    await client.say(context.message.author.mention + ", did you know that..   " + random.choice(possible_responses))
 
 @client.command(name = 'det',
                 description = "Calculates the determinant of a square matrice. Matrice is to be provided as a list with each entry seperated by a ',' eg. '1,2,3,4' "
